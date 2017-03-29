@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Angular UI router</title>
+
+    <!-- Third-party styles -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Application styles -->
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+  <body ng-app="AddressBook">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="NavController as navCtrl">
+      <div class="container">
+        <a class="navbar-brand">Address Book</a>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        <div class="collpase navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li ng-if="!navCtrl.isLoggedIn()">
+              <a href="#" ng-click="navCtrl.logIn($event)">
+                <span class="glyphicon glyphicon-log-in"></span>
+                &nbsp;
+                Log in
+              </a>
+            </li>
+            <li ng-if="navCtrl.isLoggedIn()">
+              <a href="#" ng-click="navCtrl.logOut($event)">
+                <span class="glyphicon glyphicon-log-out"></span>
+                &nbsp;
+                Log out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- TODO: insert content here -->
+    </main>
+
+    <footer class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container" style="text-align:center;">
+        <p class="navbar-text">&copy; 2017 - Olivier Ertz &amp; Mathias Oberson &amp; Simon Oulevay</p>
+      </div>
+    </footer>
+
+    <!-- Third-party libraries -->
+    <script type="text/javascript" src="assets/js/lodash.min.js"></script>
+    <script type="text/javascript" src="assets/js/angular.min.js"></script>
+    <script type="text/javascript" src="assets/js/angular-storage.min.js"></script>
+    <script type="text/javascript" src="assets/js/angular-ui-router.min.js"></script>
+
+    <!-- Application -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+    <script type="text/javascript" src="js/contacts.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+  </body>
+</html>

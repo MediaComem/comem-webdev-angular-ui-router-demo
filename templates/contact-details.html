@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Contact details for {{ contactDetailsCtrl.contact.firstName }} {{ contactDetailsCtrl.contact.lastName }}</h3>
+  </div>
+  <div class="panel-body">
+    <dl class="dl-horizontal">
+      <dt>Given name</dt>
+      <dd>{{ contactDetailsCtrl.contact.firstName }}</dd>
+      <dt>Surname</dt>
+      <dd>{{ contactDetailsCtrl.contact.lastName }}</dd>
+      <dt>Address</dt>
+      <dd>{{ contactDetailsCtrl.contact.address }}</dd>
+      <dd>{{ contactDetailsCtrl.contact.city }}, {{ contactDetailsCtrl.contact.state }} {{ contactDetailsCtrl.contact.zip }}</dd>
+      <dt>Phone number</dt>
+      <dd>{{ contactDetailsCtrl.contact.phone }}</dd>
+    </dl>
+  </div>
+</div>

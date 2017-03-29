@@ -1,0 +1,42 @@
+[
+  {
+    "id": "10293",
+    "firstName": "William",
+    "lastName": "Allen",
+    "address": "2788 Kyle Street",
+    "city": "Wood River",
+    "zip": 68883,
+    "state": "NE",
+    "phone": "308-583-2320"
+  },
+  {
+    "id": "65701",
+    "firstName": "Bob",
+    "lastName": "Anaya",
+    "address": "32 Oakridge Farm Lane",
+    "city": "Milwaukee",
+    "zip": 53225,
+    "state": "WE",
+    "phone": "262-388-5853"
+  },
+  {
+    "id": "12823",
+    "firstName": "Erica",
+    "lastName": "Benfield",
+    "address": "103 Goodwin Avenue",
+    "city": "Spokane",
+    "zip": 99201,
+    "state": "WA",
+    "phone": "509-434-7294"
+  },
+  {
+    "id": "85012",
+    "firstName": "Gloria",
+    "lastName": "Shipp",
+    "address": "4208 Broadway Avenue",
+    "city": "Chattanooga",
+    "zip": 37409,
+    "state": "TN",
+    "phone": "423-821-4794"
+  }
+]

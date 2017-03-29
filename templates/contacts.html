@@ -1,0 +1,15 @@
+<h1>Contacts</h1>
+
+<nav class="col-sm-4">
+  <div class="well">
+    <ul>
+      <li ng-repeat="contact in contactsPageCtrl.contacts | orderBy: 'lastName'">
+        <a href="#">{{ contact.lastName | uppercase }} {{ contact.firstName }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="col-sm-8">
+  <!-- TODO: display contact details here -->
+</section>
