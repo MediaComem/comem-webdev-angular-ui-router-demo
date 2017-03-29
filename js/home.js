@@ -1,4 +1,4 @@
-angular.module('AddressBook').controller('HomeController', function() {
-  var homeCtrl = this;
-  homeCtrl.name = 'Address Book';
+angular.module('AddressBook').controller('HomePageController', function() {
+  var homePageCtrl = this;
+  homePageCtrl.name = 'Address Book';
 });
