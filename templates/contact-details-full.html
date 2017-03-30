@@ -1,0 +1,14 @@
+<h1>Contact details for {{ contactDetailsCtrl.contact.firstName }} {{ contactDetailsCtrl.contact.lastName }}</h1>
+<dl class="dl-horizontal">
+  <dt>Given name</dt>
+  <dd>{{ contactDetailsCtrl.contact.firstName }}</dd>
+  <dt>Surname</dt>
+  <dd>{{ contactDetailsCtrl.contact.lastName }}</dd>
+  <dt>Address</dt>
+  <dd>{{ contactDetailsCtrl.contact.address }}</dd>
+  <dd>{{ contactDetailsCtrl.contact.city }}, {{ contactDetailsCtrl.contact.state }} {{ contactDetailsCtrl.contact.zip }}</dd>
+  <dt>Phone number</dt>
+  <dd>{{ contactDetailsCtrl.contact.phone }}</dd>
+</dl>
+
+<a ui-sref="contacts.details({ id: contactDetailsCtrl.contact.id })">Back to list</a>
