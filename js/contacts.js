@@ -9,7 +9,10 @@ angular.module('AddressBook').controller('ContactsPageController', function(Cont
 angular.module('AddressBook').controller('ContactDetailsController', function(ContactsService) {
   var contactDetailsCtrl = this;
 
-  // TODO: get contact details here
+  var id = null; // TODO: get contact ID from state parameter
+  ContactsService.getContact(id).then(function(contact) {
+    contactDetailsCtrl.contact = contact;
+  });
 });
 
 angular.module('AddressBook').factory('ContactsService', function($http, $q) {
