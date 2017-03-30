@@ -1,14 +1,14 @@
 angular.module('AddressBook').controller('NavController', function(AuthService) {
-  var authCtrl = this;
+  var navCtrl = this;
 
-  authCtrl.isLoggedIn = AuthService.isLoggedIn;
+  navCtrl.isLoggedIn = AuthService.isLoggedIn;
 
-  authCtrl.logIn = function(event) {
+  navCtrl.logIn = function(event) {
     event.preventDefault();
     AuthService.setLoggedIn(true);
   };
 
-  authCtrl.logOut = function(event) {
+  navCtrl.logOut = function(event) {
     event.preventDefault();
     AuthService.setLoggedIn(false);
   };
