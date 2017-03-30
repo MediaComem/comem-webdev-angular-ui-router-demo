@@ -6,10 +6,19 @@ angular.module('AddressBook').controller('ContactsPageController', function(Cont
   });
 });
 
-angular.module('AddressBook').controller('ContactDetailsController', function(ContactsService) {
+angular.module('AddressBook').controller('ContactDetailsController', function(ContactsService, $stateParams) {
   var contactDetailsCtrl = this;
 
-  var id = null; // TODO: get contact ID from state parameter
+  var id = $stateParams.id;
+  ContactsService.getContact(id).then(function(contact) {
+    contactDetailsCtrl.contact = contact;
+  });
+});
+
+angular.module('AddressBook').controller('FullContactDetailsController', function(ContactsService, $stateParams) {
+  var contactDetailsCtrl = this;
+
+  var id = $stateParams.id;
   ContactsService.getContact(id).then(function(contact) {
     contactDetailsCtrl.contact = contact;
   });

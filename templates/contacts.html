@@ -4,12 +4,12 @@
   <div class="well">
     <ul>
       <li ng-repeat="contact in contactsPageCtrl.contacts | orderBy: 'lastName'">
-        <a href="#">{{ contact.lastName | uppercase }} {{ contact.firstName }}</a>
+        <a ui-sref='contacts.details({ id: contact.id })'>{{ contact.lastName | uppercase }} {{ contact.firstName }}</a>
       </li>
     </ul>
   </div>
 </nav>
 
 <section class="col-sm-8">
-  <!-- TODO: display contact details here -->
+  <div ui-view />
 </section>

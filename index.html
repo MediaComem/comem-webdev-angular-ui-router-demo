@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,9 +19,9 @@
 
     <nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="NavController as navCtrl">
       <div class="container">
-        <a class="navbar-brand" href="#">Address Book</a>
-        <ul class="nav navbar-nav">
-            <li><a href="#">Contacts</a></li>
+        <a class="navbar-brand" ui-sref="home">Address Book</a>
+        <ul class="nav navbar-nav" ng-if="navCtrl.isLoggedIn()">
+          <li ui-sref-active="active"><a ui-sref="contacts">Contacts</a></li>
         </ul>
         <div class="collpase navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
@@ -44,7 +45,7 @@
     </nav>
 
     <main class="container">
-      <!-- TODO: insert content here -->
+      <div ui-view />
     </main>
 
     <footer class="navbar navbar-default navbar-fixed-bottom">
