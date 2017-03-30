@@ -4,6 +4,8 @@ This repository contains a starter project for an Angular UI router exercise in 
 
 The corresponding slides are available [here][slides].
 
+The completed exercise is available in the `solution` branch.
+
 
 
 [dfa]: https://github.com/MediaComem/comem-masrad-dfa
