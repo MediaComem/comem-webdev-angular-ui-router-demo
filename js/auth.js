@@ -1,4 +1,4 @@
-angular.module('AddressBook').controller('NavController', function(AuthService, $state) {
+angular.module('AddressBook').controller('NavController', function(AuthService) {
   var authCtrl = this;
 
   authCtrl.isLoggedIn = AuthService.isLoggedIn;
